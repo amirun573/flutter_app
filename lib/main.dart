@@ -9,12 +9,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('I am rich'),
-          backgroundColor: Colors.red,
-        ),
-        body: Center(
-          child: Image(image: AssetImage('images/miles.jpg')),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Container(
+            height: 100,
+            width: 100,
+            margin: EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
+            color: Colors.white,
+            child: Text('hello'),
+          ),
         ),
       ),
     );

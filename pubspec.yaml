@@ -22,6 +22,11 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+
+  fonts:
+    - family: Langar
+      fonts:
+        - asset: fonts/Langar-Regular.ttf
     
 
   

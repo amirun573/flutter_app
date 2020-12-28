@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
             Text(
               'Amirun',
               style: TextStyle(
+                fontFamily: 'Langar',
                 fontSize: 40.0,
+                color: Colors.white,
               ),
             ),
           ],

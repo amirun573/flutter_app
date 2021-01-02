@@ -26,54 +26,35 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Card(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Padding(
-                padding: EdgeInsets.all(25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      size: 100.0,
-                      color: Colors.teal.shade900,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+0136365573',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Langar',
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
-                ),
-              ),
-            ),
-            Card(
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.email,
-                    color: Colors.red,
-                  ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    'amirunaqmar@gmail.com',
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(Icons.phone, color: Colors.teal),
+                  title: Text(
+                    '013-',
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.teal.shade900,
                       fontFamily: 'Langar',
                     ),
-                  )
-                ],
-              ),
-            ),
+                  ),
+                )),
+            Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.red,
+                  ),
+                  title: Text(
+                    'amirunaqmar',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Langar',
+                    ),
+                  ),
+                )),
           ],
         )),
       ),

@@ -25,6 +25,11 @@ class MyApp extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+            Container(
+              child: Row(
+                children: <Widget>[Icon(Icons.add_shopping_cart, size: 100.0)],
+              ),
+            ),
           ],
         )),
       ),
